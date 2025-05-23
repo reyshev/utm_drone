@@ -97,6 +97,10 @@ app.get('/api/observer', (req, res) => {
   res.json(activeFlights);
 });
 
+app.get('/', (req, res) => {
+  res.send('🚀 UTM Drone Backend работает!');
+});
+
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
